@@ -1,0 +1,54 @@
+body {
+    background-color: green;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+div { 
+    width: 30%;
+    height: 70vh;
+    background-color: #b6b8ba;
+    margin-bottom: 3%;
+}
+
+div:hover {
+    background-color: lightgray;
+}
+
+#div-one {
+    border-left: 10px solid black;
+    border-top: 10px solid black;
+}
+
+#div-two {
+    border-top: 10px solid black;
+}
+
+#div-two img {
+    height: 70vh;
+    width: 100%;
+}
+
+#div-three {
+    border-right: 10px solid black;
+    border-top: 10px solid black;
+}
+
+#ball {
+    display: flex;
+    width: 6%;
+    margin-left: auto;
+    margin-right: auto;
+}
