@@ -5,6 +5,7 @@ const goalMiddle = document.getElementById("div-two");
 const goalRight = document.getElementById("div-three");
 const sectionHTML = document.querySelector('section');
 const scoreCount = document.createElement("p");
+const ballImage = document.getElementById("ball");
 
 let goalieOne = document.getElementById("goalie-image-one");
 let scoreCounter = 0;
@@ -32,10 +33,12 @@ function goalieSideChange () {
     if (event.currentTarget === goalieOne.parentElement) { // Code van ChatGPT
         goalieOne.src = "images/goalie-two.png"; // Code van Kevin Yip
         booSound.play();
+        ballImage.style.display = "none";
     } else {
         scoreCounter++;
         goalieOne.src = "images/goalie-one.png"; // Code van Kevin Yip
         goalSound.play();
+        ballImage.style.display = "block";
     }
 
     if (scoreCounter <= 10) {
